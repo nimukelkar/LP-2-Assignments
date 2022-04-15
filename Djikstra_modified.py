@@ -18,7 +18,7 @@ class Graph:
     def reconstruct_path(self,node,start):
         l=[]
         cost=self.g[node]
-        while(self.parent[node]!=start):
+        while(self.parent[node]!=node):
             l.append(node)
             node=self.parent[node]
 
@@ -49,7 +49,7 @@ class Graph:
                 g_tentative=self.g[current]+cost
                 if(g_tentative<self.g[n]):
                     self.parent[n]=current
-                    self.g[current]=g_tentative
+                    self.g[n]=g_tentative
                     self.frontier.append(n)
             #Remove current from frontier list, transfer to closed list.
             self.frontier.remove(current)
