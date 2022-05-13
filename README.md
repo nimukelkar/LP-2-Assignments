@@ -6,7 +6,9 @@ All 3 algorithms have more or less the SAME boiler plate code.Implemented in pyt
 Step 1. We find the current node.(Initially when frontier list is empty it is start node itself).
 Step 2. We expand the frontier node children, and update the gtentative score.If gtentative<g then we update gtable.
 Step 3.Remove current node from frontier list, and add it to the closed list.
-Tried to simplify all codes and maximum code zise does not increase 50 lines.
+
+                                                                                              
+ Tried to simplify all codes and maximum code size does not increase 50 lines.
                                                                                               
                                                                                               
                                                                                               
